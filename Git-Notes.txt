@@ -24,3 +24,4 @@
 	4. Difference Between two commits
         a. Git diff
         b. git status -v
+        c. Test

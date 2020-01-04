@@ -22,7 +22,15 @@
 		e. To limit number of logs use git log -n 5
 		f. To search in all commit messages git log --grep="<Text>", its case sensitive
 	4. Difference Between two commits
-        a. Git diff
-        b. git status -v
-        c. Test
-        d. Test 1
+		a. Git diff (Without doing git add . - it check modified local files)
+		b. Git status -v (After adding that file onto stage by git add .)
+		c. Git diff --staged (shows only changes in staging area)
+	5. Delete file from git repo
+		a. Git rm <FileName> and it will add this change to stage
+	6. Rename or Move a file
+		a. If file renamed via OS, in that case
+			i. Git add <NewFileName>
+			ii. Git fm <OldFileName>
+		b. With the help of above comments, it will show the same file as renamed in stage
+		c. Instead of OS, directly using git
+        d. Git mv <SourceFile> <DestinationFile> and it will go to stage directly.

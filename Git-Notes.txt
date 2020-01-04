@@ -1,0 +1,26 @@
+	1. Configuration
+		a. Git config --list
+		b. Git config --get-all user.name
+		c. Git config --global user.name "Mohit Vijay"
+		d. Git config --global user.email "mohit.vijay@gmail.com"
+		e. Git config user.name
+
+	2. Work with repository
+		a. Go into working directory first
+		b. Git init 
+		c. To delete repository from git, just delete .git directory and it will remove all information and association related to git
+		d. Work with Files
+			i. Git status to check status of files (Added, deleted, modified etc…). Can be done anytime to check status
+			ii. Git add . (because of . All files in the directory will add to git - not commit and pushed)
+			iii. Git commit -m "<Message>"
+			iv. After this, if file get modify, we have to repeat from step i. or ii. 
+	3. Commit Message Best Practice
+		a. A short single line summary (Less than 50 characters)
+		b. You can add discerption followed by blank line (each line less than 72 characters)
+		c. Write commit message in Present tense
+		d. To check all commits use git log
+		e. To limit number of logs use git log -n 5
+		f. To search in all commit messages git log --grep="<Text>", its case sensitive
+	4. Difference Between two commits
+        a. Git diff
+        b. git status -v

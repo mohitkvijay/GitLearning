@@ -24,7 +24,6 @@
 		e. To limit number of logs use git log -n 5
 		f. To search in all commit messages git log --grep="<Text>", its case sensitive
 	4. Difference Between two commits
-<<<<<<< HEAD
 		a. Git diff (Without doing git add . - it check modified local files)
 		b. Git status -v (After adding that file onto stage by git add .)
 		c. Git diff --staged (shows only changes in staging area)
@@ -44,13 +43,6 @@
 	7. Push to Repository
 		a. git remote add <name> <url>
 		b. Git push <name>
-        c. git push --set-upstream <name>I master
-=======
+        c. git push --set-upstream <name> master
         a. Git diff
         b. git status -v
-<<<<<<< HEAD
-        c. Test
->>>>>>> parent of 31eef22... commit all changes in repo
-=======
-        c. Test
->>>>>>> parent of 31eef22... commit all changes in repo

@@ -48,5 +48,9 @@
 =======
         a. Git diff
         b. git status -v
+<<<<<<< HEAD
+        c. Test
+>>>>>>> parent of 31eef22... commit all changes in repo
+=======
         c. Test
 >>>>>>> parent of 31eef22... commit all changes in repo

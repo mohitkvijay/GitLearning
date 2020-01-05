@@ -43,6 +43,13 @@
 	7. Push to Repository
 		a. git remote add <name> <url>
 		b. Git push <name>
-        c. git push --set-upstream <name> master
-        a. Git diff
-        b. git status -v
+		c. git push --set-upstream <name>I master
+	8. Discard Changes
+		a. To discard changes from working directory
+			i. Git checkout -- filename (it will overwrite file in working directory from repository)
+			ii. Git reset Head filename (to unstage file)
+	9. Amend last commit changes
+		a. Git commit --amend -m "Message"
+	10. Retrieve old commit using git checkout <commithash> --filename
+	11. Revert a commit - git revert <commithash>
+	12. Git clean -n for dry run and git clean -f for remove untracked files

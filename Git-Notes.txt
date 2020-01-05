@@ -9,11 +9,13 @@
 		a. Go into working directory first
 		b. Git init 
 		c. To delete repository from git, just delete .git directory and it will remove all information and association related to git
-		d. Work with Files
+		d. Head will always represent latest commit
+		e. Work with Files
 			i. Git status to check status of files (Added, deleted, modified etc…). Can be done anytime to check status
 			ii. Git add . (because of . All files in the directory will add to git - not commit and pushed)
 			iii. Git commit -m "<Message>"
 			iv. After this, if file get modify, we have to repeat from step i. or ii. 
+			v. Git commit -a or git commit --all (with stage, directly commit into repository)
 	3. Commit Message Best Practice
 		a. A short single line summary (Less than 50 characters)
 		b. You can add discerption followed by blank line (each line less than 72 characters)
@@ -25,6 +27,10 @@
 		a. Git diff (Without doing git add . - it check modified local files)
 		b. Git status -v (After adding that file onto stage by git add .)
 		c. Git diff --staged (shows only changes in staging area)
+		d. Git diff --color-words
+		e. Git show <commitHash>
+		f. Git diff <oldcommit>..<newcommit>
+		g. Git diff <oldcommit>..<newcommit> --color-words 
 	5. Delete file from git repo
 		a. Git rm <FileName> and it will add this change to stage
 	6. Rename or Move a file
@@ -33,4 +39,8 @@
 			ii. Git fm <OldFileName>
 		b. With the help of above comments, it will show the same file as renamed in stage
 		c. Instead of OS, directly using git
-        d. Git mv <SourceFile> <DestinationFile> and it will go to stage directly.
+			i. Git mv <SourceFile> <DestinationFile> and it will go to stage directly.
+	7. Push to Repository
+		a. git remote add <name> <url>
+		b. Git push <name>
+        c. git push --set-upstream <name>I master
